@@ -55,3 +55,20 @@ puts num # 11
 # 数値はto_sメソッドで文字列に変換する必要がある
 number = 3
 puts 'Number is ' + number.to_s # Number is 3
+
+# 基数指示子
+#
+# 2進数 0b
+# 8進数 0
+# 16進数 0x
+0b11111111 # 255
+0377 # 255
+0xff # 255
+
+# 数値クラス
+#
+# Numericクラスの下に
+# Interger(整数)クラス、Flat(実数、少数)クラス、Rational(有理数)クラスなどがある
+#
+10.class # Integer
+1.5.class # Float

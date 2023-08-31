@@ -72,3 +72,21 @@ puts 'Number is ' + number.to_s # Number is 3
 #
 10.class # Integer
 1.5.class # Float
+
+# timesメソッド
+# 繰り返し
+sum = 0
+5.times {|n| sum += n}
+puts sum #10
+
+# nからmまでの数値を1つずつ増やしながら処理したいときはuptoがある。
+# downtoもあるよ
+a = []
+10.upto(14) {|n| a << n}
+pp a # [10, 11, 12, 13, 14]
+
+# 1, 3, 5のようにnからmまで数値をx個ずつ増やしながら何か処理したい場合
+# 1から10まで2つずつ処理
+a = []
+1.step(10,2) {|n| a << n}
+pp a # [1, 3, 5, 7, 9]

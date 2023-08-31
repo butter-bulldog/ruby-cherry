@@ -33,6 +33,13 @@ sum = 0
 numbers.each { |n| sum += n }
 puts sum # 10
 
+# each_with_indexを使うと添字が取れる
+fruits = ['apple', 'orange', 'melon']
+fruits.each_with_index {|fruit, i| puts "#{i}: #{fruit}"}
+# 0: apple
+# 1: orange
+# 2: melon
+
 
 # ブロックを使用する、使用頻度が高いメソッドはarray.rbに記載
 

@@ -77,3 +77,9 @@ puts add(1, 2) # 3
 # どちらも同じ。好きなほうを使えばよい
 'hello'.length # 5
 'hello'.size # 5
+
+# メソッドないにスコープを限定した"定数"は定義できない
+def foo
+  BAR = 123
+  BAR * 10
+end

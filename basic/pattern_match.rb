@@ -2,6 +2,9 @@
 # パターンマッチ
 #
 
+# arrayパターン
+# 配列の構造で処理を変えられる
+# 他にもvalueパターン、hashパターン、variableパターン…などあり
 require 'date'
 records = [
   [2021],

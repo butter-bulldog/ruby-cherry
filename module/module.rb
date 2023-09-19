@@ -66,5 +66,28 @@ Product.create_product([]) #[LOG] create_products is called.
 Product.log('Hello.') # [LOG] Hello. # Productクラスのクラスメソッドとして直接呼び出せる
 
 
+#
+# 名前空間を分けて名前の衝突を防ぐ
+#
+module Baseball
+  class Second
+    def initialize(player, uniform_number)
+      @player = player
+      @uniform_number = uniform_number
+    end
+  end
+end
 
+module Clock
+  class Second
+    def initialize(digits)
+      @digits = digits
+    end
+  end
+end
+
+# モジュール名::クラス名で区切れる
+Baseball::Second('Alice', 13)
+Clock::Second(13)
+    
 
